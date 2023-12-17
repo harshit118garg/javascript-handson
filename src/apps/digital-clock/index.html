@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../style.css" />
+    <style>
+      #card {
+        animation: shake 1000ms infinite;
+      }
+      @keyframes shake {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        25% {
+          transform: translate(5px, 5px) rotate(5deg);
+        }
+        50% {
+          transform: translate(0, 0) rotate(0eg);
+        }
+        75% {
+          transform: translate(-5px, 5px) rotate(-5deg);
+        }
+        100% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+      }
+    </style>
+    <title>Digital Clock</title>
+  </head>
+  <body
+    class="container bg-gradient-to-tr from-purple-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% overflow-hidden font-serif"
+  >
+    <div class="h-screen w-screen">
+      <div class="grid place-items-center h-full">
+        <div
+          id="card"
+          class="w-96 h-60 max-sm:w-72 max-sm:h-48 bg-orange-700 text-white rounded-lg shadow-xl"
+        >
+          <div class="p-4 flex h-full justify-center items-center gap-4">
+            <div>
+              <h3 class="text-6xl max-sm:text-4xl" id="hour">00</h3>
+            </div>
+            <div id="colon"><span class="text-2xl">:</span></div>
+            <div>
+              <h3 class="text-6xl max-sm:text-4xl" id="minute">00</h3>
+            </div>
+            <div id="colon"><span class="text-2xl">:</span></div>
+            <div>
+              <h3 class="text-6xl max-sm:text-4xl" id="second">00</h3>
+            </div>
+            <div><span class="text-2xl" id="M">AM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+.tabs-container {
+  width: 100%;
+  color: white;
+}
+
+.tabs-container ul {
+  display: flex;
+  align-items: center;
+}
+
+.tabs-container ul li {
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.tabs-container ul li:hover {
+  background-color: #abab39;
+  color: #cf2727;
+}
+
+.tabs-container ul .tab-active {
+  background-color: #fafafa;
+  color: #444;
+} 
+
+.tabs-content-wrapper {
+  color: whitesmoke;
+  width: 100%;
+}
+
+.tabs-content-wrapper > * {
+  background-color: brown;
+}
+
+.tabs-content-wrapper .tab-panel {
+  display: none;
+  padding: 3rem;
+}
+
+.tabs-content-wrapper .tab-panel h2 {
+  font-size: 3rem;
+}
+
+.tabs-content-wrapper .tab-panel-active {
+  display: block;
+}
+

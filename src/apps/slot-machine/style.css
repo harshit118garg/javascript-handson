@@ -1,0 +1,40 @@
+:root {
+  --speed: 10;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#screens > #slot-1, #slot-2, #slot-3 {
+    overflow: hidden;
+}
+
+#slot-1 > .spin {
+  position: relative;
+  z-index: 3;
+  animation: slotspin infinite calc(3s / var(--speed));
+}
+
+#slot-2 > .spin {
+  position: relative;
+  z-index: 3;
+  animation: slotspin infinite calc(3s / var(--speed));
+}
+
+#slot-3 > .spin {
+  position: relative;
+  z-index: 3;
+  animation: slotspin infinite calc(3s / var(--speed));
+}
+
+@keyframes slotspin {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}

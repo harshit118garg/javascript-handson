@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="h-screen flex justify-center items-center mx-12">
+    <div class="min-w-3xl container bg-slate-600 rounded-xl">
+      <div class="flex flex-col w-full justify-center items-center py-12">
+        <div class="tabs-container">
+          <ul>
+            <li data-tab="home" class="tab tab-active">Home</li>
+            <li data-tab="about" class="tab">About</li>
+            <li data-tab="profile" class="tab">Profile</li>
+          </ul>
+        </div>
+        <div class="tabs-content-wrapper">
+          <div data-tab-panel="home" class="tab-panel tab-panel-active">
+            <h2>Home</h2>
+          </div>
+          <div data-tab-panel="about" class="tab-panel">
+            <h2>About</h2>
+          </div>
+          <div data-tab-panel="profile" class="tab-panel">
+            <h2>Profile</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

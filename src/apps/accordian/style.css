@@ -1,0 +1,22 @@
+.accordian-item:not(:last-child) {
+    border-bottom: 2px solid black;
+}
+
+.accordian-item .accordian-pane {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    font-size: 1.25rem;
+}
+
+.accordian-item .accordian-pane span {
+    cursor: pointer;
+}
+
+.accordian-item .accordian-panel {
+    display: none;
+}
+
+.accordian-item .accordian-panel-active {
+    display: block;
+}
